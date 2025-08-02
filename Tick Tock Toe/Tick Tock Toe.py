@@ -85,16 +85,10 @@ def toggle_mode():
     ctk.set_appearance_mode(mode)
 
 
-
 # -------------------------------- Main ----------------------------------
 app = ctk.CTk()
 app.title("Tic Tac Toe")  # Make a name for game
-# Get the path to the folder where your script is located
-base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
-# Safely join the image path
-icon_path = os.path.join(base_path, "tick_tock_toe.ico")
-# Load and set icon
-app.iconbitmap(icon_path)
+
 app.resizable(False, False) # Make the app unchangable
 
 # Create a frame for the game board
